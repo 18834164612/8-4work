@@ -1,0 +1,340 @@
+body,ul,li,h2,h4,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* nav开始 */
+.nav {
+    width: 100%;
+    height: 70px;
+    position: relative; 
+}
+.nav-left {
+    float: left;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 2.6%;
+   
+}
+.nav-left span {
+    font-size: 12px;
+    color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-left img {
+    height: 100%;
+}
+.nav-list {
+    width: 80%;
+    height: 70px;
+    float: right;
+}
+.nav-list li {
+    float: right;
+    display: block;
+    font-size: 16px;
+    line-height: 70px;
+    position: relative;
+
+}
+.list-changping:hover .more-2{ 
+    display: block;
+}
+.list-about:hover .more-1{ 
+    display: block;
+}
+
+.nav-list li>a {
+    color: #666;
+    float: left;
+    padding: 0 50px;
+    box-sizing: border-box;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+    font-weight: 550;
+    z-index: 10;
+}
+.box {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    z-index: -1;
+}
+.more-1 {
+    width: 750px;
+    height: 70px;
+    display: none;
+    background-color: rgba(0, 0, 0,0.7);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    transition: display 1s;
+    z-index: 10;
+}
+.more-2 {
+    width: 570px;
+    height: 100px;
+    display: none;
+    background-color: rgba(0, 0, 0,0.7);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 10;
+}
+.more-1 a {
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-right: 5%;
+    padding: 5px 0;
+}
+.more-2 a {
+    display: block;
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-right: 5%;
+    padding: 5px 0;
+}
+/* nav结束 */
+/* banner开始 */
+.banner {
+    width: 100%;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+}
+.center-dw {
+    width: 1320px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -660px;
+    top: 25%;
+}
+.center-h1 {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    font-size: 48px;
+    line-height: 68px;
+    margin-bottom: 5%;
+}
+.center-h2 {
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+}
+.qiu {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    right: 16%;
+    bottom: -80px;
+    cursor: pointer;
+}
+.huadong {
+    width: 24px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.huadong img {
+    width: 100%;
+    animation: myMove 2s infinite;
+    position: relative;
+    top:0
+}
+@keyframes myMove {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/* banner结束 */
+/* container开始 */
+.container {
+    width: 1320px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    clear: both;
+}
+.chanpin {
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0px;
+    box-sizing: border-box;
+}
+.chanpin-list {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.chanpin-list li {
+    margin-bottom: 30px;
+    width: 30%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.chan-all {
+    width: 100%;
+    border-radius: 25px; 
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #e6e6e6;
+}
+.chan-all:hover .chan-dw {
+    height: 100%;
+}
+.chan-all>img {
+    width: 100%;
+    border-radius: 27px;
+    overflow: hidden;
+}
+.chan-dw {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.chan-bt {
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.chan-p {
+    width: 100%;
+    padding: 0px 15%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #808080;
+    text-align: center;
+}
+
+
+.chanpin-more {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #0054a8;
+    height: 22%;
+    width: 100%;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.juzhong {
+    width: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.juzhong img {
+    width: 100%;
+}
+/* container结束 */
+/* 底部开始 */
+.bottom {
+    width: 100%;
+    overflow: hidden;
+    background-color: #242424;
+}
+.bottom-fw {
+    width: 87%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 4% 5px 0px;
+    box-sizing: border-box;
+}
+.bottom-list {
+    width: 100%;
+    overflow: hidden;
+}
+.bottom-list li {
+    overflow: hidden;
+    float: left;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-icon {
+    width: 40px;
+    overflow: hidden;
+    float: left;
+    margin-right: 14px;
+}
+.bottom-icon img {
+    width: 100%;
+}
+.bottom-list li h4 {
+    font-size: 13px;
+    line-height: 34px;
+    color: #999999;
+    float: left;
+}
+.zhichi {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    color: #5c5c5c;
+    background-color: #242424;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.zhi-fw {
+    width: 73%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/* 底部结束 */
